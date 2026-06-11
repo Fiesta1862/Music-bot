@@ -6,19 +6,12 @@ lavalink:
   server:
     password: "youshallnotpass"
     sources:
-      youtube: true
+      youtube: false
       bandcamp: true
       soundcloud: true
       twitch: true
       vimeo: true
-      mixer: true
       http: true
-      local: false
-    buffer:
-      durationMs: 400
-    youtube:
-      playback: false
-      search: true
     filters:
       volume: true
       equalizer: true
@@ -26,10 +19,13 @@ lavalink:
       timescale: true
       tremolo: true
       vibrato: true
-      rotation: true
       distortion: true
+      rotation: true
       channelMix: true
       lowPass: true
+    bufferDurationMs: 400
+    youtubeSearchEnabled: true
+    soundcloudSearchEnabled: true
 
 logging:
   file:
